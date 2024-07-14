@@ -16,7 +16,7 @@
 
 <body>
     <div class="flex justify-center">
-        <div class="w-full min-w-96 max-w-md p-8 space-y-3 rounded-xl bg-gray-50 text-gray-800">
+        <div class="w-full min-w-96 max-w-md p-5 rounded-xl bg-gray-50 text-gray-800">
             <h1 class="text-2xl font-bold text-center">Login</h1>
 
             <!-- lLOGINogin_act.php は認証処理用のPHPです。 -->
@@ -67,7 +67,9 @@
                 <a rel="noopener noreferrer" type="submit" href="start.php" class="underline text-gray-800">Sign up</a>
             </p>
 
-            <?php include("html/footer.html"); ?>
+            <div class="flex justify-center absolute bottom-0">
+                <?php include("html/footer.html"); ?>
+            </div>
         </div>
     </div>
 </body>
