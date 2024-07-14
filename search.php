@@ -5,9 +5,16 @@ loginCheck();
 
 // DB接続します
 $pdo = db_conn();
+$genre = $_POST['genre'];
 
 // データ取得SQL作成
-$stmt = $pdo->prepare("SELECT * FROM cheerpark_an_tableβ");
+if ($genre == 'ALL') {
+    $stmt = $pdo->prepare("SELECT * FROM cheerpark_an_tableβ");
+} else {
+    $stmt = $pdo->prepare("SELECT * FROM cheerpark_an_tableβ WHERE genre = :genre");
+    $stmt->bindValue(':genre', $genre, PDO::PARAM_STR);
+};
+
 $status = $stmt->execute();
 
 // データ表示
@@ -64,17 +71,16 @@ if ($status == false) {
             </h1>
 
             <div class="text-right">
-                <form action="home.php" method="post" enctype="multipart/form-data">
+                <form action="search.php" method="POST" enctype="multipart/form-data">
                     <div class="flex justify-end">
-                        <select id="genre_select">
-                            <option value="all">ALL</option>
-                            <option value="プレー集">プレー集</option>
-                            <option value="トレーニング">トレーニング</option>
-                            <option value="インタビュー">試合後インタビュー</option>
-                            <option value="食">食</option>
-                            <option value="海外文化">海外文化</option>
-                            <option value="移籍関連">移籍関連</option>
-                            <option value="その他">その他</option>
+                        <select id="genre" name="genre">
+                            <option value="ALL">ALL</option>
+                            <?php
+                            $genres = ["プレー集", "トレーニング", "試合後インタビュー", "食", "海外文化", "移籍関連", "その他"];
+                            foreach ($genres as $genre) {
+                                $selected = $_POST['genre'] == $genre ? 'selected' : '';
+                                echo "<option value='$genre' $selected>$genre</option>";
+                            } ?>
                         </select>
 
                         <button type="submit">

@@ -15,37 +15,29 @@ sign upしてもらえれば誰でも入れます。試してみてください�
 
 ⑤工夫した点・こだわった点  
 
-1.紙に全体像を書き出す  
+1.tailwind cssでデザイン 10時間くらい苦戦したが大幅アップデート  
+-[参照]　tailwind cssデザイン: https://mambaui.com/components  
+https://preline.co/examples/team-sections.html  
 
-2.Login.php→post.php→home.phpのhtmlだけ作成  
+2.ホームで検索機能追加
 
-3.画面遷移を追加  
+3.授業を受けて画像を文字列で保存  
 
-4.funcs.phpでDB接続関数とSQLエラー関数、リダイレクト関数を作成  
+4.パスワードのhush化   
  
-5.insert.phpでDBに保存、今回は写真のアップロードに初挑戦!!  
--[参照]　画像保存：https://zenn.dev/zennzenn_ok/articles/b910505b811cd7  
+5.   
 
-6.home.phpに写真を表示、base64使用  
--取得した画像バイナリデータをbase64で変換して表示  
+6.  
 
-7.edit.php,update.phpで編集機能追加  
--selectタグのデータ保持　かずまさんのコードを参考にした
--画像のdb更新に苦戦　なっちゃんさんのコードを参考にした  
-画像は画像の有無を確認してからじゃないと更新できない//if ($_SERVER['REQUEST_METHOD'] == 'POST')//  
+7.   
 
-8.フッター部分のhtml化　文字数削減  
+8.削除は編集でやればいいのでは？  
 
-9.delete.phpで削除機能追加  
+9.ログアウト  
 
-10.sessionを使用してログイン機能追加  
+10.    
 
-11.login.phpに新規登録のボタンを追加  
-signup.phpで新規登録者をsqlに保存し、ログインできるようにした  
-
-12.cssでデザイン  
-
-13.ホームで検索機能追加したい  
+11.x投稿機能  
 
 ⑦質問・疑問・感想、シェアしたいこと等なんでも  
 ・[感想]　画像を㏈に保存、取り出しが難しかったですが，同期の皆さんのを参考に何とかできました。

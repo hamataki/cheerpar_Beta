@@ -66,8 +66,8 @@ if ($status == false) {
             <div class="text-right">
                 <form action="search.php" method="post" enctype="multipart/form-data">
                     <div class="flex justify-end">
-                        <select id="genre_select">
-                            <option value="all">ALL</option>
+                        <select id="genre" name="genre">
+                            <option value="ALL">ALL</option>
                             <option value="プレー集">プレー集</option>
                             <option value="トレーニング">トレーニング</option>
                             <option value="インタビュー">試合後インタビュー</option>
