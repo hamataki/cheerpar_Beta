@@ -77,14 +77,23 @@ if ($status == false) {
                             <option value="その他">その他</option>
                         </select>
 
-                        <button type="submit">
+                        <button type="">
                             <i class="fa-solid fa-magnifying-glass">検索</i>
                         </button>
                     </div>
                 </form>
 
-                <div class="">
-                    <a href=""><i class="fa-solid fa-gear">設定</i></a>
+                <div class="flex justify-end text-right">
+                    <div class="m-1 text-center">
+                        <a href="" class="text-right"><i class="fa-solid fa-gear text-center"></i>
+                            <p class="text-xs" text-center>設定</p>
+                        </a>
+                    </div>
+                    <div class="m-1 text-center">
+                        <a href="logout.php" class=""><i class="fa-solid fa-right-from-bracket text-center"></i>
+                            <p class="text-xs text-center">ログアウト</p>
+                        </a>
+                    </div>
                 </div>
             </div>
 

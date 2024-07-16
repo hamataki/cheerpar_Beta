@@ -25,7 +25,7 @@ https://preline.co/examples/team-sections.html
 
 4.パスワードのhush化   
  
-5.   
+5.ログアウト機能追加   
 
 6.  
 
@@ -33,7 +33,7 @@ https://preline.co/examples/team-sections.html
 
 8.削除は編集でやればいいのでは？  
 
-9.ログアウト  
+9.  
 
 10.    
 
