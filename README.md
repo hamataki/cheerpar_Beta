@@ -27,9 +27,9 @@ https://preline.co/examples/team-sections.html
  
 5.ログアウト機能追加   
 
-6.  
+6.youtube埋め込み  
 
-7.   
+7.previewの表示   
 
 8.削除は編集でやればいいのでは？  
 
@@ -40,9 +40,7 @@ https://preline.co/examples/team-sections.html
 11.x投稿機能  
 
 ⑦質問・疑問・感想、シェアしたいこと等なんでも  
-・[感想]　画像を㏈に保存、取り出しが難しかったですが，同期の皆さんのを参考に何とかできました。
-これは一人ではできないです😭  
-個人的にやっとphpで何ができるのか、特に投稿・更新・削除（CRUD）機能のSNS的なことが得意だということが分かり、自分のやりたいことを形にできてきました。CSSがむず過ぎて苦手です。  
-新規登録機能を加えたら本格的になりました。新規登録にもsession機能をつけるべきか？  
+・[感想]　youtubeの埋め込みができるようになった。youtubeのサイズを変えるのに苦戦。CSSがむず過ぎて苦手です。  
+ 
 ・[参照]　画像保存：https://zenn.dev/zennzenn_ok/articles/b910505b811cd7,  
 ファイルアップロードおまじない：https://mugenup-tech.hatenadiary.com/entry/2014/08/28/100910,  
